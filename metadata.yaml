@@ -1,0 +1,16 @@
+name: astrbot_plugin_autojlc
+display_name: 嘉立创自动签到
+desc: 嘉立创金豆每日自动签到，支持 Token 绑定、多账号管理、余额查询、第七天奖励领取与私聊推送。
+help: 发送「嘉立创 帮助」查看指令
+version: v1.1.0
+author: Kayin.
+repo: "https://github.com/QzKevin/astrbot_plugin_autojlc"
+astrbot_version: ">=4.12"
+support_platforms:
+  - aiocqhttp
+  - qq_official
+  - qq_official_webhook
+  - telegram
+  - wecom_ai_bot
+  - lark
+  - dingtalk

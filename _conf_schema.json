@@ -1,0 +1,42 @@
+{
+  "auto_sign": {
+    "description": "启用每日自动签到（手动签到不受影响）",
+    "type": "bool",
+    "default": true
+  },
+  "sign_time": {
+    "description": "每日自动签到时间（HH:MM，固定北京时间 UTC+8）",
+    "type": "string",
+    "default": "07:23"
+  },
+  "push_result": {
+    "description": "自动签到后向绑定账号的私聊会话推送结果",
+    "type": "bool",
+    "default": true
+  },
+  "catch_up": {
+    "description": "启动或修改签到配置后，补签当天已过签到时间且尚未成功的账号",
+    "type": "bool",
+    "default": true
+  },
+  "api_retries": {
+    "description": "网络错误、HTTP 429 或服务端错误的最大尝试次数（1-5，含首次请求）",
+    "type": "int",
+    "default": 3
+  },
+  "request_timeout": {
+    "description": "单次 HTTP 请求超时秒数（3-120）",
+    "type": "int",
+    "default": 15
+  },
+  "account_delay_min": {
+    "description": "账号间随机等待的最短秒数（0-300）",
+    "type": "int",
+    "default": 5
+  },
+  "account_delay_max": {
+    "description": "账号间随机等待的最长秒数（0-300，小于最短值时自动交换）",
+    "type": "int",
+    "default": 15
+  }
+}
